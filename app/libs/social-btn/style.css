@@ -1,0 +1,24 @@
+.panel-vk {
+	/*padding: 20px;
+	width: 250px;
+	background: #ff3333;*/
+	border: #4d75a3 1px solid;
+	border-top: none;
+	font-family: Georgia;
+	z-index: 3000;
+}
+
+.panel-fb {
+	border: #395a99 1px solid;
+	border-top: none;
+	font-family: Georgia;
+	z-index: 2000;
+
+}
+
+/*.pane3 {
+	border: #282828 1px solid;
+	border-top: none;
+	font-family: Georgia;
+	z-index: 1000;
+}*/

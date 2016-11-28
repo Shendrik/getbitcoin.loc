@@ -1,5 +1,5 @@
 {
-  "name": "optimizedhtml",
+  "name": "getbitcoin",
   "version": "1.0.0",
   "description": "OptimizedHTML - Start HTML Template",
   "main": "index.js",
@@ -27,5 +27,13 @@
     "imagemin-pngquant": "^5.0.0",
     "node-bourbon": "^4.2.8",
     "vinyl-ftp": "^0.5.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shendrik/getbitcoin.loc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Shendrik/getbitcoin.loc/issues"
+  },
+  "homepage": "https://github.com/Shendrik/getbitcoin.loc#readme"
 }
