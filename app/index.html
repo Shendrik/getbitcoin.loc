@@ -30,8 +30,8 @@
 
 	<!-- Load Fonts CSS Start -->
 	<script>
-		loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
-		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+		// loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+		loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
 	</script>
 	<!-- Load Fonts CSS End -->
 
@@ -62,7 +62,7 @@
 
   
   <link rel="stylesheet" href="libs/social-btn/style.css">
-  <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
+  <!-- <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script> -->
 
 </head>
 
@@ -138,28 +138,37 @@
 <section>
                 <h1>GetBitcoin</h1>
                 <p>Сайт посвящен bitcoin криптовалюте, осуществляет мониторинг инвестиционных фондов, хайпов, облачного майнинга, bitcoin кранов, также есть рейтинг обменных сайтов. Наш ресурс не принуждает пользователей сайта вкладывать деньги в ресурсы которые выкладываються на нашем сайте, мы лишь предоставляем мониторинг который включает в себя статистику собранную нашими специалистами.</p>
-              </div>  
-  </section>              
+              
+  </section> 
+  </div>               
               <div class="col-lg-6 col-md-5 col-sm-12">
 
               <section>
-                  <h2>Добыть Bitcoin</h2>
+                  <!-- <h2>Добыть Bitcoin</h2> -->
 
 
-                  <ul class="nav nav-tabs">
+    <!--               <ul class="nav nav-tabs">
 	<li class="active"><a href="#fond-hyips" data-toggle="tab" aria-expanded="true">Фонды и хайпы</a></li>
 	<li class=""><a href="#faucet" data-toggle="tab" aria-expanded="false">Краны</a></li>
 	<li class=""><a href="#cloud-mining" data-toggle="tab" aria-expanded="false">Облачный майнинг</a></li>
 	
-</ul>
+</ul> -->
 
 
+ <div class="tab-content custom-tab-content">
+    <!-- <div> -->
 
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs custom-tab" role="tablist">
+        <li role="presentation" class="active"><a href="#funds-hyips" aria-controls="funds-hyips" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-stats icon"></i><span class="link-lable"> Фонды и хайпы</span></a></li>
+        <li role="presentation"><a href="#faucet" aria-controls="faucet" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-fire"></i><span class="link-lable"> Краны</span></a></li>
+        <li role="presentation"><a href="#cloud-mining" aria-controls="cloud-mining" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-cloud"></i><span class="link-lable"> Облачный майнинг</span></a></li>
+      </ul>
 
-<div id="myTabContent" class="tab-content">
-
-	<div class="tab-pane fade active in" id="fond-hyips">
-		 <div class="block">
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="funds-hyips">
+          <h2><a href="#">Фонды и хайпы</a></h2>
+          		 <div class="block">
 				<!--                   <div class="wrapper">-->
 				<div class="banner">
 					<img src="img/hashflare.io.gif" alt="обзор инвестиционного фонда hashflare">
@@ -196,7 +205,7 @@
 						</tr>
 					</table>
 				</div>
-				<!--                  </div> -->
+				
 			</div>
 
 			<div class="block">
@@ -235,7 +244,7 @@
 						</tr>
 					</table>
 				</div>
-				<!--                  </div> -->
+				
 			</div>
 
 			<div class="block">
@@ -390,15 +399,29 @@
 					</table>
 				</div>
 			</div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="faucet">
+          <h2><a href="#">Биткойн краны </a></h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="cloud-mining">
+          <h2><a href="#">Облачный майнинг</a></h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
 
-	</div>
-	<div class="tab-pane fade" id="faucet">
-		<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
-	</div>
-	<div class="tab-pane fade" id="cloud-mining">
-		<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
-	</div>
-</div>
+
+    
+  </div>
+
+
+
+
+
+
+
 
 
 
@@ -429,7 +452,7 @@
 
                    <article>
                      <h3>Статья</h3>
-                      <img src="http://lorempixel.com/350/200/" alt="">
+                      <img src="img/news_full.jpg" alt="">
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium a repudiandae reiciendis laudantium sequi porro voluptatum distinctio, voluptatibus fuga, ab error voluptatem cum, in dolorem.
                       laudantium sequi porro voluptatum distinctio, voluptatibus fuga, ab error voluptatem cum, in dolorem. laudantium sequi porro voluptatum laudantium sequi porro voluptatum laudantium sequi porroqwer t ...
                       
@@ -440,7 +463,18 @@
                     <div class="news clearfix">
                     <article>
                      <h3>Статья</h3>
-                      <img src="http://lorempixel.com/350/200/" alt="">
+                      <img src="img/news_full.jpg" alt="">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium a repudiandae reiciendis laudantium sequi porro voluptatum distinctio, voluptatibus fuga, ab error voluptatem cum, in dolorem.
+                      laudantium sequi porro voluptatum distinctio, voluptatibus fuga, ab error voluptatem cum, in dolorem. laudantium sequi porro voluptatum laudantium sequi porro voluptatum laudantium sequi porroqwer t ...
+                      
+                      </p>
+                      <a href="#">Читать дальше</a> 
+                      </article>
+                  </div>
+                  <div class="news clearfix">
+                    <article>
+                     <h3>Статья</h3>
+                      <img src="img/news_full.jpg" alt="">
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium a repudiandae reiciendis laudantium sequi porro voluptatum distinctio, voluptatibus fuga, ab error voluptatem cum, in dolorem.
                       laudantium sequi porro voluptatum distinctio, voluptatibus fuga, ab error voluptatem cum, in dolorem. laudantium sequi porro voluptatum laudantium sequi porro voluptatum laudantium sequi porroqwer t ...
                       
@@ -493,14 +527,15 @@
 
 	<!--панель Вконтакте	-->
 
-	<div class="panel-vk">
-		<a class="handle" href="https://vk.com/cmpt_com_ua">Смотреть</a> <!-- Ссылка для пользователей с отключенным JavaScript -->
+	<!-- <div class="panel-vk">
+		<a class="handle" href="https://vk.com/cmpt_com_ua">Смотреть</a>  -->
+		<!-- Ссылка для пользователей с отключенным JavaScript -->
 
 
 
 		<!-- <script type="text/javascript" src="vk.com/js/api/openapi.js?121"></script> -->
 		<!-- VK Widget -->
-		<div id="vk_groups"></div>
+		<!-- <div id="vk_groups"></div>
 		<script type="text/javascript">
 			VK.Widgets.Group("vk_groups", {mode: 2,  width: "300", height: "550"}, 64653148);
 		</script>
@@ -509,20 +544,21 @@
 
 
 
-	</div>
+	</div> -->
 
 	<!--конец панели Вконтакте-->
 
 	<!--Панель в Facebook-->
 
 
-	<div class="panel-fb">
-		<a class="handle2" href="https://www.facebook.com/cmpt.com.ua/">Смотреть</a> <!-- Ссылка для пользователей с отключенным JavaScript -->
+	<!-- <div class="panel-fb">
+		<a class="handle2" href="https://www.facebook.com/cmpt.com.ua/">Смотреть</a> 
+
 
 		<div style="width: 300px; height: 550px;">
 			<div class="fb-page" data-href="https://www.facebook.com/cmpt.com.ua/" data-width="300" data-height="550" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/cmpt.com.ua/"><a href="https://www.facebook.com/cmpt.com.ua/">Центр международных перевозок и туризма</a></blockquote></div></div></div>
 
-	</div>
+	</div> -->
 
 	<!-- Optimized loading JS Start -->
 	<script>var scr = {"scripts":[
@@ -531,8 +567,8 @@
 		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 	</script>
 	<!-- Optimized loading JS End -->
-<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+<!-- <script src="libs/jquery/jquery-1.11.2.min.js"></script> -->
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>  -->
 	<!-- <script type="text/javascript" src="libs/social-btn/panel.js"></script>
     
     <script type="text/javascript" src="libs/social-btn/fb.js"></script> -->

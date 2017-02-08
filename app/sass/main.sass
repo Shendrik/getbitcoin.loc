@@ -168,4 +168,42 @@ nav.navbar.navbar-default
   font-family: Georgia
   z-index: 2000
 
+// табы
+
+.custom-tab > li
+  > a
+    -webkit-border-radius: 0
+    -moz-border-radius: 0
+    border-radius: 0
+    &:link
+      border-top: 3px solid #00bfff
+      border-right: 1px solid #00bfff
+      border-left: 1px solid #00bfff
+  -webkit-border-radius: 0
+  -moz-border-radius: 0
+  border-radius: 0
+
+.nav-tabs > li.active > a
+  background-color: #00bfff !important
+  border-top: 3px solid #00bfff
+  border-right: 1px solid #00bfff
+  border-left: 1px solid #00bfff
+  color: #FFF
+  border-bottom: 0
+  &:focus, &:hover, &:visited
+    background-color: #00bfff !important
+    border-top: 3px solid #00bfff
+    border-right: 1px solid #00bfff
+    border-left: 1px solid #00bfff
+    color: #FFF
+    border-bottom: 0
+
+i
+  color: #000
+
+.link-lable
+  text-decoration: none
+  color: #000
+
+
 @import "media"
