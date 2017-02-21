@@ -34,15 +34,15 @@ header nav
   color: #fff !important
 
 .navbar-default
-  background-color: #153A62 !important
-  border-color: #153A62 !important
+  background-color: $colors !important
+  border-color: $colors !important
 
 .navbar-default .navbar-nav>li>a
   color: #fff !important
 
 .navbar-default .navbar-nav>.active>a
   background-color: #0f2844 !important
-  // color: #fde318 !important
+  color: #fde318 !important
   font-weight:bold !important
   &hover
     background-color: #0f2844 !important
@@ -177,34 +177,32 @@ nav.navbar.navbar-default
 // табы
 
 i
-  color: #153a62
+  color: $colors
+  padding-right: 5px
 
 .custom-tab > li
   > a
-    -webkit-border-radius: 0
-    -moz-border-radius: 0
     border-radius: 0
     color: #153a62 !important
     &:link
-      border-top: 3px solid #153a62
-      border-right: 1px solid #153a62
-      border-left: 1px solid #153a62
-  -webkit-border-radius: 0
-  -moz-border-radius: 0
-  border-radius: 0
+      border-top: 3px solid $colors
+      border-right: 1px solid $colors
+      border-left: 1px solid $colors
+      border-radius: 0
+
 
 .nav-tabs > li.active > a
-  background-color: #153a62 !important
-  border-top: 3px solid #153a62
-  border-right: 1px solid #153a62
-  border-left: 1px solid #153a62
+  background-color: $colors !important
+  border-top: 3px solid $colors
+  border-right: 1px solid $colors
+  border-left: 1px solid $colors
   color: #FFF !important
   border-bottom: 0
   &:focus, &:hover, &:visited
-    background-color: #153a62 !important
-    border-top: 3px solid #153a62
-    border-right: 1px solid #153a62
-    border-left: 1px solid #153a62
+    background-color: $colors !important
+    border-top: 3px solid $colors
+    border-right: 1px solid $colors
+    border-left: 1px solid $colors
     // color: #FFF
     border-bottom: 0
 

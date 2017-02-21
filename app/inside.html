@@ -173,48 +173,17 @@
 					<div class="tab-content custom-tab-content tab-inside">
 
 		<ul class="nav nav-tabs custom-tab" role="tablist">
-        <li role="presentation" class="active"><a href="#home-tab" aria-controls="home-tab" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-stats icon"></i><span class="link-lable"> Видео обзор</span></a></li>
-        <li role="presentation"><a href="#bitcoin-tab" aria-controls="bitcoin-tab" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-fire"></i><span class="link-lable"> Отзывы</span></a></li>
-        <li role="presentation"><a href="#article-tab" aria-controls="article-tab" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-cloud"></i><span class="link-lable"> Монитор</span></a></li>
+        <li role="presentation" class="active"><a href="#home-tab" aria-controls="home-tab" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-zoom-in"></i><span class="link-lable">Монитор</span></a></li>
+        <li role="presentation"><a href="#bitcoin-tab" aria-controls="bitcoin-tab" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-comment"></i><span class="link-lable">Отзывы</span></a></li>
+        <li role="presentation"><a href="#article-tab" aria-controls="article-tab" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-facetime-video"></i><span class="link-lable">Видео обзор</span></a></li>
     </ul>
 
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane fade in active" id="home-tab">
 
 							<section>
-                <h1>Видео обзор</h1>
-                <div class="embed-responsive embed-responsive-16by9">
- 									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6E-3gojAHdU"></iframe>
-								</div>
-              </section> 
-
-				</div>
-				<div role="tabpanel" class="tab-pane fade" id="bitcoin-tab">
-          <h2><a href="#">Отзывы </a></h2>
-          <!-- Коментарии -->
-          <div id="hypercomments_widget"></div>
-          <script type="text/javascript">
-          	_hcwp = window._hcwp || [];
-          	_hcwp.push({widget:"Stream", widget_id: 87252});
-          	(function() {
-          		if("HC_LOAD_INIT" in window)return;
-          		HC_LOAD_INIT = true;
-          		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
-          		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
-          		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/87252/"+lang+"/widget.js";
-          		var s = document.getElementsByTagName("script")[0];
-          		s.parentNode.insertBefore(hcc, s.nextSibling);
-          	})();
-          </script>
-          <a href="http://hypercomments.com" class="hc-link" title="comments widget">comments powered by HyperComments</a>
-
-
-
-
-        </div>
-        <div role="tabpanel" class="tab-pane fade" id="article-tab">
-          <h2><a href="#">Облачный майнинг</a></h2>
-          <table class="table table-striped table-hover table-condensed">
+							<h2>Мониторинг депозита</h2>
+							<table class="table table-striped table-hover table-condensed">
 						<tr>
 							<td>Сайт</td>
 							<td><a href="#">bitminister.com</a></td>
@@ -242,6 +211,38 @@
 
 						</tr>
 					</table>
+                
+              </section> 
+
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="bitcoin-tab">
+          <h2>Отзывы</h2>
+          <!-- Коментарии -->
+          <div id="hypercomments_widget"></div>
+          <script type="text/javascript">
+          	_hcwp = window._hcwp || [];
+          	_hcwp.push({widget:"Stream", widget_id: 87252});
+          	(function() {
+          		if("HC_LOAD_INIT" in window)return;
+          		HC_LOAD_INIT = true;
+          		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+          		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+          		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/87252/"+lang+"/widget.js";
+          		var s = document.getElementsByTagName("script")[0];
+          		s.parentNode.insertBefore(hcc, s.nextSibling);
+          	})();
+          </script>
+          <a href="http://hypercomments.com" class="hc-link" title="comments widget">comments powered by HyperComments</a>
+
+
+
+
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="article-tab">
+                <h2>Видео обзор</h2>
+                <div class="embed-responsive embed-responsive-16by9">
+ 									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6E-3gojAHdU"></iframe>
+								</div>
         </div>
 		</div> 
 		</div>
