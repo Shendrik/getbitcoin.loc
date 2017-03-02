@@ -78,8 +78,9 @@ nav.navbar.navbar-default
 .description td, .home td
   font-size: 13px
 
-.description table tr:last-child
+.description table tr:last-child, .description-inside table tr:last-child
   text-align: center
+
 
 .full-banner
   width: 300px
@@ -219,22 +220,32 @@ i
   // color: #000
 
 // баннер и описание в inside
-.inside-wrapper
-  max-height: 250px
+// .inside-wrapper
+//   max-height: 250px
 
-.inside-wrapper > .banner-inside
+.inside-wrapper
+
+.banner-inside img
+  width: 100%
+
+.banner-inside
+  width: 222px
   float: left
-  width: 300px
+
+
+
+
+// .inside-wrapper > .banner-inside
+//   float: left
+//   width: 300px
 
 .inside-wrapper.description-inside
   float: left
-  min-width: 100%
 
-.tab-inside
-  margin-top: 25px
+.table-resp 
+  min-height: .01%
+  overflow-x: auto
 
-.cryptonatorwidget
-  &:last-child
-    display: none
+
 
 @import "media"
