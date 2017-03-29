@@ -184,15 +184,21 @@ i
   color: $colors
   padding-right: 5px
 
-.custom-tab > li
-  > a
-    border-radius: 0
-    color: #153a62 !important
-    &:link
-      border-top: 3px solid $colors
-      border-right: 1px solid $colors
-      border-left: 1px solid $colors
-      border-radius: 0
+.tab-inside
+	.nav
+		li
+			a
+				padding: 8px 8px !important
+
+.custom-tab
+	a
+		border-radius: 0
+		color: #153a62 !important
+		&:link
+			border-top: 3px solid $colors
+			border-right: 1px solid $colors
+			border-left: 1px solid $colors
+			border-radius: 0
 
 
 .nav-tabs > li.active > a
@@ -228,9 +234,9 @@ i
 .banner-inside img
   width: 100%
 
-.banner-inside
-  width: 222px
-  float: left
+// .banner-inside
+//   width: 210px
+//   float: left
 
 
 
@@ -239,14 +245,41 @@ i
 //   float: left
 //   width: 300px
 
-.inside-wrapper.description-inside
-  // float: left
+	// .outside-wrapper
+	// 	.banner-inside
+	// 		min-width: 100%
+	// 	.inside-wrapper
+	// 		width: 222px
+
 
 .outside-wrapper
-  .table-resp 
-    min-height: .01%
-    overflow-x: auto
+	.inside-wrapper
+		.banner-inside
+			width: 222px
+			float: left
 
+	.table-resp 
+		min-height: .01%
+		overflow-x: auto
+
+.wrapper-home
+	font-size: 12px
+
+	.table
+		margin-bottom: 0	
+
+	.inside-wrapper
+		border: 1px solid #c5c5c5
+		width: 215px
+		float: left
+		margin-bottom: 10px
+		
+	.inside-wrapper:nth-child(even)
+		margin-left: 10px
+
+	h3
+		margin-top: 5px
+    margin-bottom: 5px
 
 
 @import "media"

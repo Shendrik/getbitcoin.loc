@@ -5,16 +5,15 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	.wrapper-home
-		.table-resp 
-			width: 100%
-			margin-bottom: 15px
-			overflow-y: hidden
-			// -ms-overflow-style: -ms-autohiding-scrollbar
-			border: 1px solid #ddd
 
-		.banner-inside
-			min-width: 100%
+	.wrapper-home
+		.inside-wrapper
+			width: 100%
+		
+		.inside-wrapper:nth-child(even)
+			margin-left: 0
+
+
 
 	.block
 		width: 215px
@@ -25,22 +24,44 @@
 	.block
 		margin-right: 8px  //15
 	
+	// .wrapper-home
+	// 	.table-resp 
+	// 		width: auto
+	// 		margin-bottom: 15px
+	// 		overflow-y: hidden
+	// 		// -ms-overflow-style: -ms-autohiding-scrollbar
+	// 		border: 1px solid #ddd
+
+	// 	.banner-inside
+ //  		min-width: inherit
 	.wrapper-home
-		.table-resp 
-			width: auto
-			margin-bottom: 15px
-			overflow-y: hidden
-			// -ms-overflow-style: -ms-autohiding-scrollbar
-			border: 1px solid #ddd
-
-		.banner-inside
-  		min-width: inherit
-
+		.inside-wrapper
+			width: 215px
+		.inside-wrapper:nth-child(even)
+			margin-left: 10px
 	
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+
+	.wrapper-home
+		.inside-wrapper
+			width: 100%
+			
+			.banner-inside
+				width: 202px
+				float: left
+		
+		.inside-wrapper:nth-child(even)
+			margin-left: 0
+
+
+		.table-resp 
+			min-height: .01%
+			overflow-x: auto
+
+
 	.block
 		margin-right: 8px
 
@@ -103,16 +124,27 @@
 	.link-lable
     display: none
 
-	.table-resp 
-		width: 100%
-		margin-bottom: 15px
-		overflow-y: hidden
-		// -ms-overflow-style: -ms-autohiding-scrollbar
-		border: 1px solid #ddd
+	.outside-wrapper
+		.table-resp 
+			width: 100%
+			margin-bottom: 15px
+			overflow-y: hidden
+			// -ms-overflow-style: -ms-autohiding-scrollbar
+			border: 1px solid #ddd
 
-	.banner-inside
-  	min-width: 100%
-     
+		.banner-inside
+	  	min-width: 100%
+ 	
+ 
+	.wrapper-home
+		.inside-wrapper
+			width: 100%
+			
+			.banner-inside
+				width: 100%
+				float: none
+
+
 
 @media only screen and (max-width : 350px)
 	.block
@@ -166,5 +198,9 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
-	/**/
+	// .outside-wrapper
+	// 	.table-resp
+	// 		min-height: .01%
+	
+
 
