@@ -1,0 +1,10 @@
+NOTEPAD
+
+let req = new XMLHttpRequest();
+req.open('GET', 'https://api.cryptonator.com/api/full/btc-usd', false); 
+req.send(null);
+let parsedData = JSON.parse(req.responseText);
+
+for (var key in parsedData) {
+console.log(parsedData[key].price)
+}
