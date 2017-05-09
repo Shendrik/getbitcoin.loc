@@ -871,12 +871,24 @@ s.parentNode.insertBefore(hcc, s.nextSibling);
 <a href="http://hypercomments.com" class="hc-link" title="comments widget">comments powered by HyperComments</a>
 
 <!-- Курс Биржи	 -->
-<script>	
+<script>
+
+
 $.get( "https://chain.so/api/v2/get_price/BTC", function( response ) {
+for (var i=0; i < response.data.prices.length ; i++) {
+	if (response.data.prices[i].exchange === 'btc-e' && response.data.prices[i].price_base === 'USD'){
+		var btceExchange = response.data.prices[i].exchange;
+		var btcePrice = response.data.prices[i].price;
+		var btcBase = response.data.prices[i].price_base;
+	}
+}
+
   $( ".vstavka" )
-  .append( "Биржа: " + response.data.prices[6].exchange + "</br>")
-    .append( "Курс: " + response.data.prices[6].price  + response.data.prices[6].price_base + "<br/>" ); 
+  .append( "Биржа: " + btceExchange + "</br>")
+    .append( "1 BTC = " + Math.round(btcePrice)  + " "+ btcBase + "<br/>" ); 
 }, "json" );
+
+ 
 </script>
 	<!-- Optimized loading JS End -->
 <!-- <script src="libs/jquery/jquery-1.11.2.min.js"></script> -->
