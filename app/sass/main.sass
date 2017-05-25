@@ -94,8 +94,8 @@ nav.navbar.navbar-default
 .wrapper-home table tr:last-child, .wrapper-grid table tr:last-child
   text-align: center
 
-  i
-  	padding-left: 5px
+  // i
+  // 	padding-left: 2px
 
 // .description-inside
 //   table
@@ -465,14 +465,35 @@ i
 .dataTables
 	font-size: 12px
 
+
+.wr
+	float: right
+	display: inline-block
+	position: relative
+
 .comments
 	a
-		margin-right: 0em
-		border: solid 1px #ccc 
-		background-color: #ccc
-		padding: 4px 5px 5px 0
-		i
-			padding-right: 2px
+		background-color: #ddd
+		padding: 5px 5px 6px 20px
+		text-align: right
+
+		&:hover
+			background-color: #ccc
+		
+		.glyphicon 
+			display: inline-block
+			position: absolute
+	i
+		padding-right: 0
+
+
+
+	.glyphicon
+		position: absolute
+		left: 5px
+		top: 3px
+		z-index: 200
+
 
 
 // .btn-comment
